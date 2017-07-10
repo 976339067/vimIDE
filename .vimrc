@@ -1,3 +1,15 @@
+"---------------------------------general configure begin-------------------------------------
+set number
+"---------------------------------general configure end----------------------------------------------
+
+
+
+"-------------------------------------pathogen configure begin -------------------------------------------------
+call pathogen#infect()
+"-------------------------------------pathogen configure end ------------------------------------------------------
+
+
+
 "---------------------------------auto update ctags and taglist functtion begin-------------------------------------
 "ctags
 "create ctags
@@ -28,12 +40,6 @@ autocmd BufWritePost *.c,*.h,*.cpp call UpdateCtags()
 
 
 
-"-------------------------------------pathogen configure begin -------------------------------------------------
-call pathogen#infect()
-"-------------------------------------pathogen configure end ------------------------------------------------------
-
-
-
 "------------------------------------taglist configure begin ---------------------------------------------------------
 filetype on
 let Tlist_Auto_Open = 1
@@ -44,4 +50,13 @@ let Tlist_File_Fold_Auto_Close=1
 "------------------------------------taglist configure end ----------------------------------------------------------
 
 
-set number
+
+"------------------------------------winManager configure begin ---------------------------------------------------------
+let g:winManagerWindowLayout = "TagList|FileExplorer"
+let g:winManagerWidth = 35
+"nmap <silent> <F7> :WMToggle<cr> "使用快捷键F7打开WinManager和taglist，可根据喜好自行设置  
+"------------------------------------winManager configure end ----------------------------------------------------------
+
+
+
+
