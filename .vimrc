@@ -62,15 +62,23 @@ let Tlist_Auto_Open = 1
 let Tlist_Compact_Format=1
 let Tlist_Display_Prototype=1
 let Tlist_File_Fold_Auto_Close=1
-"nnoremap <silent> <F8> :TlistToggle<CR> "使用快捷键F8来打开taglist列表，可以根据自己的喜好进行设置 
+"nnoremap <silent> <F7> :TlistToggle<CR> "使用快捷键F7来打开taglist列表，可以根据自己的喜好进行设置 
 "------------------------------------taglist configure end ----------------------------------------------------------
 
 
 
 "------------------------------------winManager configure begin ---------------------------------------------------------
+"设置界面分割
+"let g:winManagerWindowLayout = "TagList|FileExplorer,BufExplorer"
 let g:winManagerWindowLayout = "TagList|FileExplorer"
+
+"设置winmanager的宽度，默认为25
 let g:winManagerWidth = 35
-"nmap <silent> <F7> :WMToggle<cr> "使用快捷键F7打开WinManager和taglist，可根据喜好自行设置  
+
+"todo:can not work normally, try to solve it
+"let g:AutoOpenWinManager = 1
+
+nmap <silent> <F8> :WMToggle<cr> "使用快捷键F8打开WinManager和taglist，可根据喜好自行设置
 "------------------------------------winManager configure end ----------------------------------------------------------
 
 
