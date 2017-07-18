@@ -4,12 +4,15 @@ set number
 "设置（软）制表符宽度为4：
 set tabstop=4
 set expandtab
-"对于已保存的文件，可以使用下面的方法进行空格和TAB的替换
+"对于已保存的文件，可以使用下面的方法进行空格和TAB的替换:
 %retab!
 
-"设置缩进的空格数为4
+"设置缩进的空格数为4:
 set softtabstop=4
 set shiftwidth=4
+
+"设置使用 C/C++ 语言的自动缩进方式:
+set cindent
 "---------------------------------general configure end----------------------------------------------
 
 
