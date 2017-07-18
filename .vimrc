@@ -13,6 +13,9 @@ set shiftwidth=4
 
 "设置使用 C/C++ 语言的自动缩进方式:
 set cindent
+
+"设置自动缩进：即每行的缩进值与上一行相等；使用 noautoindent 取消设置：
+set autoindent
 "---------------------------------general configure end----------------------------------------------
 
 
