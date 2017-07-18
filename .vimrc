@@ -6,6 +6,10 @@ set tabstop=4
 set expandtab
 "对于已保存的文件，可以使用下面的方法进行空格和TAB的替换
 %retab!
+
+"设置缩进的空格数为4
+set softtabstop=4
+set shiftwidth=4
 "---------------------------------general configure end----------------------------------------------
 
 
