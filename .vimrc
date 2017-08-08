@@ -16,6 +16,10 @@ set cindent
 
 "设置自动缩进：即每行的缩进值与上一行相等；使用 noautoindent 取消设置：
 set autoindent
+
+"use systerm copy and paste
+set clipboard=unnamed
+autocmd VimLeave * call system("echo -n $'" . escape(getreg(), "'") . "' | xsel -ib")
 "---------------------------------general configure end----------------------------------------------
 
 
@@ -82,5 +86,14 @@ nmap <silent> <F8> :WMToggle<cr> "使用快捷键F8打开WinManager和taglist，
 "------------------------------------winManager configure end ----------------------------------------------------------
 
 
+"------------------------------------配色方案设置 begin---------------------------------------------------------
+set runtimepath+=~/.vim/colors
+"colorscheme darkblue
+"colorscheme vividchalk
+"colorscheme solarized
 
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+"------------------------------------配色方案设置 end---------------------------------------------------------
 
