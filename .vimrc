@@ -87,13 +87,22 @@ nmap <silent> <F8> :WMToggle<cr> "使用快捷键F8打开WinManager和taglist，
 
 
 "------------------------------------配色方案设置 begin---------------------------------------------------------
+syntax on 　　　　　　　　  " 进行语法检验，颜色显示
+
 set runtimepath+=~/.vim/colors
 "colorscheme darkblue
 "colorscheme vividchalk
 "colorscheme solarized
 
-colorscheme molokai
-let g:molokai_original = 1
-let g:rehash256 = 1
+"colorscheme molokai
+"let g:molokai_original = 1
+"let g:rehash256 = 1
+
+syntax enable
+set background=dark
+colorscheme solarized
+
+
+
 "------------------------------------配色方案设置 end---------------------------------------------------------
 
