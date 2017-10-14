@@ -83,6 +83,8 @@ let g:winManagerWidth = 35
 "let g:AutoOpenWinManager = 1
 
 nmap <silent> <F8> :WMToggle<cr> "使用快捷键F8打开WinManager和taglist，可根据喜好自行设置
+
+au bufenter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr(v:val), "&bt"))')) | qa! | endif "buffer window auto close
 "------------------------------------winManager configure end ----------------------------------------------------------
 
 
