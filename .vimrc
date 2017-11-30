@@ -92,17 +92,17 @@ au bufenter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr
 syntax on 　　　　　　　　  " 进行语法检验，颜色显示
 
 set runtimepath+=~/.vim/colors
+syntax enable
 "colorscheme darkblue
 "colorscheme vividchalk
 "colorscheme solarized
 
-"colorscheme molokai
-"let g:molokai_original = 1
-"let g:rehash256 = 1
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
 
-syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 
 
