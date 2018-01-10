@@ -20,6 +20,9 @@ set autoindent
 "use systerm copy and paste
 set clipboard=unnamed
 autocmd VimLeave * call system("echo -n $'" . escape(getreg(), "'") . "' | xsel -ib")
+
+"设置搜索高亮
+set  hlsearch
 "---------------------------------general configure end----------------------------------------------
 
 
