@@ -23,6 +23,9 @@ autocmd VimLeave * call system("echo -n $'" . escape(getreg(), "'") . "' | xsel 
 
 "设置搜索高亮
 set  hlsearch
+
+"设置搜索时一边输入一边显示效果
+set incsearch
 "---------------------------------general configure end----------------------------------------------
 
 
