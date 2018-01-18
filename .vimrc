@@ -26,6 +26,9 @@ set  hlsearch
 
 "设置搜索时一边输入一边显示效果
 set incsearch
+
+"关闭循环搜索
+set nowrapscan
 "---------------------------------general configure end----------------------------------------------
 
 
