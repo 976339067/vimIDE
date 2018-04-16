@@ -29,6 +29,13 @@ set incsearch
 
 "关闭循环搜索
 set nowrapscan
+
+"取消输入#字符时自动跳到行首
+"set smartindent
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
+
 "---------------------------------general configure end----------------------------------------------
 
 
