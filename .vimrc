@@ -36,6 +36,9 @@ set cindent
 set cinkeys-=0#
 set indentkeys-=0#
 
+"输入的命令显示出来，看的清楚些
+set showcmd
+
 "---------------------------------general configure end----------------------------------------------
 
 
